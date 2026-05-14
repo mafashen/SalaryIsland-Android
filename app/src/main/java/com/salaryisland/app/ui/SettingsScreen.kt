@@ -232,13 +232,13 @@ fun SettingsScreen(
                         text = "时薪: ¥${"%.2f".format(hourlyRate)}",
                         fontSize = 14.sp,
                         color = Color(0xFF4CAF50),
-                        fontWeight = FontWeight.Semibold
+                        fontWeight = FontWeight.SemiBold
                     )
                     Text(
                         text = "日薪: ¥${"%.2f".format(hourlyRate * workHoursPerDay)}",
                         fontSize = 14.sp,
                         color = Color(0xFF4CAF50),
-                        fontWeight = FontWeight.Semibold
+                        fontWeight = FontWeight.SemiBold
                     )
                 }
 

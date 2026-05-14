@@ -85,10 +85,8 @@ private fun ExpandedContent(result: SalaryResult) {
     AnimatedContent(
         targetState = earnedText,
         transitionSpec = {
-            ContentTransform(
-                fadeIn(animationSpec = tween(400)),
+            fadeIn(animationSpec = tween(400)) togetherWith
                 fadeOut(animationSpec = tween(400))
-            ).togetherWith(fadeIn())
         },
         label = "earned_anim"
     ) { text ->
